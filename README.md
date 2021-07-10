@@ -23,13 +23,18 @@ A gauge chart is also displayed, which shows the number of times the test subjec
 
 Research participants for this study are able to see the information about the biodiversity in their navels, if they know their id numbers. They may then be able to determine if their belly buttons contain bacteria that are able to synthesize proteins that may have useful applications, in this case enhance beef flavor for synthetic beef.
 
-The dashboard was built using javascript, and HTML. Plotly was used to create the different interactive visualizations. Furthermore Bootstrap, and CSS were used to style the page.
+The dashboard was built using javascript, and HTML. Plotly was used to create the different interactive visualizations. Furthermore Bootstrap, and CSS were used to style the page.\
+The dashboard is also responsive. Below is a picture of how it would appear on an Ipad.
+
+![ipad_view](https://user-images.githubusercontent.com/71800628/125149630-b4d3e500-e0ff-11eb-963c-1543c956b7a1.png)
 
 
 ### Resources used
 - Data Source: 'samples.json' 
 - Software: ECMAScript2015, d3.js 4.11.0, Bootstrap v4.0.0, Plotly
 The image inserted in the dashboard, and the one below, were obtained from the webpage of robdunnlab, from the NC State, The Public Science Lab.
+http://robdunnlab.com/projects/belly-button-biodiversity/
+
 
 ![most-common-taxa](https://user-images.githubusercontent.com/71800628/125146585-2b66e780-e0ec-11eb-8f37-8bbb26360642.jpg)
 
