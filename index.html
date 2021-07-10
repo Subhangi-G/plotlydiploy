@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css"/>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+        <h6 id="refer">(Image taken from: http://robdunnlab.com/projects/belly-button-biodiversity/)</h6>
+      </div>
+    </div>
+    <div class="row" id="intro">
+      <div class="col-md-12">
+        <p>
+          It's a jungle out there! The Belly Button hosts a fascinating collection of microbial diversity. <br>
+          This page may be used as an educational resource to explore the different kinds of bacterial species that
+          reside in the navel of the volunteers identified by their id numbers. Upon choosing a 'Test Subject Id No.' from the drop down menu, the
+          corresponding charts are displayed. Hovering over the graphs will give the name of the microbe(s) associated with the OTU (Operational Taxonomic Unit) number.<br>
+          Bacterial species identified here may be utilized in various application such as a flavor enhancer in the food industry.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+          </div>
+      </div>
+      <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+      <div class="col-md-5">
+        <div id="gauge"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-5">
+        <p id="info">
+          <i>The horizontal bar graph displays the 10 most abundant bacterial types that grew in cultures from this sample</i>
+        </p>
+      </div>
+      <div class="col-md-5">
+        <p id="info">
+          <i>
+            Washing the belly button affects the biodiversity in interesting ways.
+            The amount, as well as the types or species of bacteria that live in the navel may, change depending upon the frequency of washing.
+        </i>
+        </p>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+        <p id="info">
+          <i>
+            The bubble bar graph displays the bacterial types that grew in cultures obtained from this sample.<br>
+            The size of the bubble is a function of the relative abundance of the bacterial types found in the sample.
+        </i>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="static/js/charts.js"></script>
+
+</body>
+
+</html> 
+   

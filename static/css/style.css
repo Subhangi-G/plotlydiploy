@@ -1,0 +1,17 @@
+.jumbotron {
+    background-image: url("../images/microbes.jpg");
+    object-fit: cover;
+    color: rgb(248, 25, 25)
+  }
+#refer {
+      text-align: right;
+    }
+.container {
+      background-color: bisque;
+    }
+#info {
+      font-size: 17px;
+    }
+#intro {
+      font-size: 20px;
+    }
